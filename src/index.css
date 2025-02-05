@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  height:100%;
+  width:100%;
+}
+
+body{
+  font-family: 'Roboto', 'Inter';
+  padding:0;
+  margin:0;
+  height: 100%;
+  display: flex;
+  background-color:#065590;
+  width:100%;
+  height:100%;
+}
+
+#root{
+  width:100%;
+  height:100%;
+}
+
+
+.hideMyScrollBar{
+  scrollbar-width: none; /* Hiding for Firefox */
+  -ms-overflow-style: none; /* Hiding for IE and Edge */
+}
+
+
+/* Making snap scrolling possible */
+.hideMyScrollBar>*{
+  scroll-snap-align: start;
+  margin-right: 5vh;
+}
+
+.hideMyScrollBar::-webkit-scrollbar{
+  display: none; /* Hiding for Chrome, Safari, and Firefox */
+}
+
+/* Comp */
+
+.HeaderSearchBar{
+      border-radius: 31px; /* Corner radius */
+      background-color: #2A2A2D; /* Fill color */
+      color: #FFFFFF; /* Text color */
+      
+}
+
+.HeaderSearchBar_Container{
+  position:relative;
+}
+
+.HeaderSearchBar_Icon{
+  position:absolute;
+}
+
+/* Comp */
+
+.UserProfileIcon{
+  object-fit:cover;
+}
+
+/* Comp */
+.WMNHeaderPartComponent{ /*  Sets the default gap */
+  margin-right:1vw;
+}
+
+.WMNHeaderPartText{
+  color:white;
+}
+

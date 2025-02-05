@@ -1,0 +1,7 @@
+#/ directories
+.vercel/
+.vscode/
+.codegpt/
+node_modules/
+build/
+
